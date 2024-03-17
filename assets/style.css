@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+
+* {
+    color: #d9d9d9;
+}
+
+body {
+    background-color: #238878 !important;
+}
+
+.logo {
+    width: 20vh;
+}
+
+nav {
+    height: 50px;
+}
+
+nav ul li a {
+    font-family: "Madimi One", sans-serif;
+    font-size: 2.7vh;
+    color: #d9d9d9 !important;
+}
+
+nav ul li a:hover {
+    font-family: "Madimi One", sans-serif;
+    font-size: 2.7vh;
+    color: #fdfdfd !important;
+}
+
+nav ul li:active {
+    font-family: "Madimi One", sans-serif;
+    font-size: 2.7vh;
+    text-shadow: 0px 0px 5px #78b1a8 !important;
+}
+
+.dropdown-menu {
+    background-color: #238878 !important;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #d9d9d9!important;
+}
+
+.dropdown-menu .dropdown-item:active{
+    background-color: aqua!important;
+}
+
+.pro-btn {
+    font-size: 4vh;
+}
+
+.searchbar{
+    margin: 30px 0px;
+    margin-left: 72vh;
+    left: 45%;
+    width: 100vh;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+}
+
+
+.searchbar i{
+    color: #238878;
+}
+
+.searchbox {
+    font-size:2vh;
+    padding-top: 10vh;
+    background-color: #d9d9d9;
+    width: 96vh;
+    height: 3.8vh;
+    border: none;
+    padding: 0px 30px;
+    border-radius: 30px;
+    color: #238878;
+    font-weight: 500;
+    left: 45%;
+}
+
+.card{
+    width: 125vh;
+    left: 30%;
+    background-color: #d9d9d9 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 17px 17px 10px 10px !important;
+}
+
+.card-body-main{
+    border-radius: 17px 17px 10px 10px ;
+    background-color: #78b1a8;
+    box-shadow: 0px 0px 5px #78b1a8;
+    margin: 0px !important;
+    padding:0px 15px !important;
+}
+
+.card-body{
+    border-radius: 17px 17px 0px 0px;
+    padding:  1rem 0px 0px 0px !important;
+    border: none;
+}
+
+.card-title{
+    color: #238878;
+    font-weight: 500;
+    padding-left:1.5rem !important;
+    font-family: "Madimi One", sans-serif;
+}
+
+.scrollbar-container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.scrollbar-container::-webkit-scrollbar-track {
+    background: transparent; /* Background color of the scrollbar track */
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
