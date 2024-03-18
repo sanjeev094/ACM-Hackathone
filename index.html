@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="./assets/side menu.css">
 
   <link rel="shortcut icon" href="./assets/image/innomed trans.png" type="image/x-icon">
 
@@ -67,129 +66,147 @@
       </div>
     </nav>
   </header>
-
-  <!-- search bar -->
+  <!-- SEARCH BAR -->
   <div class="searchbar mb-4">
     <input class="searchbox" type="search" name="search" id="search" placeholder="Search...">
     <i class="fas fa-search"></i>
   </div>
-  
-  <!-- cards -->
 
+  <section class="main body">
 
-<div class="card mb-5">
-  <div class="card-body">
-      <h5 class="card-title">DISEASES HISTORY</h5>
-      <div class="card-body-main scrollbar-container" style="max-height: 230px; overflow-y: auto;">
-          <div class="table-responsive">
+    <section class="left side">
+      
+      <div class="sidemenu">
+        <div class="block block1"><i class="fas fa-stethoscope"></i></div>
+        <div class="block"><i class="fas fa-hospital"></i></div>
+        <div class="block"><i class="fas fa-capsules"></i></div>
+        <div class="block"><i class="fas fa-notes-medical"></i></div>
+        <div class="block selected"><i class="fas fa-history"></i> HISTORY</div> <!-- Active block -->
+      </div>
+
+    </section>
+
+    <section class="Right side">
+      <!-- Info Box -->
+      <!-- Diseases Box -->
+      <div class="card mb-5">
+        <div class="card-body">
+          <h5 class="card-title">DISEASES HISTORY</h5>
+          <div class="card-body-main scrollbar-container" style="max-height: 230px; overflow-y: auto;">
+            <div class="table-responsive">
               <table class="table">
-                  <thead>
-                      <tr>
-                          <th style="width: 25%;">Diseases</th>
-                          <th style="width: 55%;">Drugs taken</th>
-                          <th style="width: 20%;">Date</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">1.Common Cold</td> 
-                        <td style="padding: 1.2rem 0;">Ibuprofen, Phenylephrine, Guaifenesin</td>
-                        <td style="padding: 1.2rem 0;">22/02/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">2.Urinary Tract Infection (UTI)</td>
-                        <td style="padding: 1.2rem 0;">Trimethoprim, Nitrofurantoin, Ciprofloxacin</td>
-                        <td style="padding: 1.2rem 0;">02/01/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">3.Hay Fever</td>
-                        <td style="padding: 1.2rem 0;">Antihistamines, Intranasal Corticosteroids, Decongestants</td>
-                        <td style="padding: 1.2rem 0;">12/12/23</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">4.Headache</td>
-                        <td style="padding: 1.2rem 0;">Paracetamol, Aspirin, Caffeine</td>
-                        <td style="padding: 1.2rem 0;">12/09/23</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">5.Stomachache</td>
-                        <td style="padding: 1.2rem 0;">Antacids, Simethicone, Bismuth Subsalicylate</td>
-                        <td style="padding: 1.2rem 0;">27/06/23</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">6.Back Pain</td>
-                        <td style="padding: 1.2rem 0;">Acetaminophen, Ibuprofen, Naproxen</td>
-                        <td style="padding: 1.2rem 0;">12/06/23</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">7.Allergy</td>
-                        <td style="padding: 1.2rem 0;">Antihistamines, Corticosteroids, Decongestants</td>
-                        <td style="padding: 1.2rem 0;">05/05/23</td>
-                    </tr>
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Diseases</th>
+                    <th style="width: 55%;">Drugs taken</th>
+                    <th style="width: 20%;">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">1.Common Cold</td>
+                    <td style="padding: 1.2rem 0;">Ibuprofen, Phenylephrine, Guaifenesin</td>
+                    <td style="padding: 1.2rem 0;">22/02/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">2.Urinary Tract Infection (UTI)</td>
+                    <td style="padding: 1.2rem 0;">Trimethoprim, Nitrofurantoin, Ciprofloxacin</td>
+                    <td style="padding: 1.2rem 0;">02/01/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">3.Hay Fever</td>
+                    <td style="padding: 1.2rem 0;">Antihistamines, Intranasal Corticosteroids, Decongestants</td>
+                    <td style="padding: 1.2rem 0;">12/12/23</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">4.Headache</td>
+                    <td style="padding: 1.2rem 0;">Paracetamol, Aspirin, Caffeine</td>
+                    <td style="padding: 1.2rem 0;">12/09/23</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">5.Stomachache</td>
+                    <td style="padding: 1.2rem 0;">Antacids, Simethicone, Bismuth Subsalicylate</td>
+                    <td style="padding: 1.2rem 0;">27/06/23</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">6.Back Pain</td>
+                    <td style="padding: 1.2rem 0;">Acetaminophen, Ibuprofen, Naproxen</td>
+                    <td style="padding: 1.2rem 0;">12/06/23</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">7.Allergy</td>
+                    <td style="padding: 1.2rem 0;">Antihistamines, Corticosteroids, Decongestants</td>
+                    <td style="padding: 1.2rem 0;">05/05/23</td>
+                  </tr>
                 </tbody>
               </table>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
 
-<div class="card mb-4">
-  <div class="card-body">
-      <h5 class="card-title">DOCTORS/HOSPITALS HISTORY</h5>
-      <div class="card-body-main scrollbar-container" style="max-height: 230px; overflow-y: auto;">
-          <div class="table-responsive">
+      <!-- Doc/hospitals Box -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">DOCTORS/HOSPITALS HISTORY</h5>
+          <div class="card-body-main scrollbar-container" style="max-height: 230px; overflow-y: auto;">
+            <div class="table-responsive">
               <table class="table">
-                  <thead>
-                      <tr>
-                          <th style="width: 25%;">Doctors/Hospitals</th>
-                          <th style="width: 55%;">Specialization</th>
-                          <th style="width: 20%;">Date</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">1.St. Jude's Medical Center</td> 
-                        <td style="padding: 1.2rem 0;">General Medicine</td>
-                        <td style="padding: 1.2rem 0;">03/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">2.Dr. Smith</td>
-                        <td style="padding: 1.2rem 0;">Cardiology</td>
-                        <td style="padding: 1.2rem 0;">06/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">3.Riverside General Hospital</td>
-                        <td style="padding: 1.2rem 0;">Oncology</td>
-                        <td style="padding: 1.2rem 0;">09/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">4.Dr. Johnson</td>
-                        <td style="padding: 1.2rem 0;">Neurology</td>
-                        <td style="padding: 1.2rem 0;">12/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">5.Mercy Hospital</td>
-                        <td style="padding: 1.2rem 0;">Pediatrics</td>
-                        <td style="padding: 1.2rem 0;">15/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">6.Dr. Williams</td>
-                        <td style="padding: 1.2rem 0;">Orthopedics</td>
-                        <td style="padding: 1.2rem 0;">18/03/24</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1.2rem 0;">7.Cedar Sinai Medical Center</td>
-                        <td style="padding: 1.2rem 0;">Dermatology</td>
-                        <td style="padding: 1.2rem 0;">21/03/24</td>
-                    </tr>
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Doctors/Hospitals</th>
+                    <th style="width: 55%;">Specialization</th>
+                    <th style="width: 20%;">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">1.St. Jude's Medical Center</td>
+                    <td style="padding: 1.2rem 0;">General Medicine</td>
+                    <td style="padding: 1.2rem 0;">03/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">2.Dr. Smith</td>
+                    <td style="padding: 1.2rem 0;">Cardiology</td>
+                    <td style="padding: 1.2rem 0;">06/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">3.Riverside General Hospital</td>
+                    <td style="padding: 1.2rem 0;">Oncology</td>
+                    <td style="padding: 1.2rem 0;">09/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">4.Dr. Johnson</td>
+                    <td style="padding: 1.2rem 0;">Neurology</td>
+                    <td style="padding: 1.2rem 0;">12/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">5.Mercy Hospital</td>
+                    <td style="padding: 1.2rem 0;">Pediatrics</td>
+                    <td style="padding: 1.2rem 0;">15/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">6.Dr. Williams</td>
+                    <td style="padding: 1.2rem 0;">Orthopedics</td>
+                    <td style="padding: 1.2rem 0;">18/03/24</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 1.2rem 0;">7.Cedar Sinai Medical Center</td>
+                    <td style="padding: 1.2rem 0;">Dermatology</td>
+                    <td style="padding: 1.2rem 0;">21/03/24</td>
+                  </tr>
                 </tbody>
               </table>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+      <!-- Info Box End -->
 
+    </section>
+    <!-- Calender -->
 
+  </section>
 
 </body>
 

@@ -39,19 +39,19 @@ nav ul li:active {
     border: none;
 }
 
-.dropdown-menu .dropdown-item:hover{
-    background-color: #d9d9d9!important;
+.dropdown-menu .dropdown-item:hover {
+    background-color: #d9d9d9 !important;
 }
 
-.dropdown-menu .dropdown-item:active{
-    background-color: aqua!important;
+.dropdown-menu .dropdown-item:active {
+    background-color: aqua !important;
 }
 
 .pro-btn {
     font-size: 4vh;
 }
 
-.searchbar{
+.searchbar {
     margin: 30px 0px;
     margin-left: 72vh;
     left: 45%;
@@ -60,13 +60,16 @@ nav ul li:active {
     border-radius: 30px;
 }
 
-
-.searchbar i{
+.searchbar i {
     color: #238878;
 }
 
+.fas {
+    font-size: 2vh;
+}
+
 .searchbox {
-    font-size:2vh;
+    font-size: 2vh;
     padding-top: 10vh;
     background-color: #d9d9d9;
     width: 96vh;
@@ -79,7 +82,7 @@ nav ul li:active {
     left: 45%;
 }
 
-.card{
+.card {
     width: 125vh;
     left: 30%;
     background-color: #d9d9d9 !important;
@@ -88,40 +91,101 @@ nav ul li:active {
     border-radius: 17px 17px 10px 10px !important;
 }
 
-.card-body-main{
-    border-radius: 17px 17px 10px 10px ;
+.card-body-main {
+    border-radius: 17px 17px 10px 10px;
     background-color: #78b1a8;
     box-shadow: 0px 0px 5px #78b1a8;
     margin: 0px !important;
-    padding:0px 15px !important;
+    padding: 0px 15px !important;
 }
 
-.card-body{
+.card-body {
     border-radius: 17px 17px 0px 0px;
-    padding:  1rem 0px 0px 0px !important;
+    padding: 1rem 0px 0px 0px !important;
     border: none;
 }
 
-.card-title{
+.card-title {
     color: #238878;
     font-weight: 500;
-    padding-left:1.5rem !important;
+    padding-left: 1.5rem !important;
     font-family: "Madimi One", sans-serif;
 }
 
 .scrollbar-container::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
+    width: 5px;
+    /* Width of the scrollbar */
 }
 
 .scrollbar-container::-webkit-scrollbar-track {
-    background: transparent; /* Background color of the scrollbar track */
+    background: transparent;
+    /* Background color of the scrollbar track */
 }
 
 .scrollbar-container::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the thumb */
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
 }
 
 .scrollbar-container::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar thumb on hover */
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+.main.body {
+    display: flex; /* Use flexbox to make the sections appear inline */
+}
+
+.left.side {
+    float: left; /* Float the left side to make it appear on the left */
+}
+
+.right.side {
+    float: right; /* Float the right side to make it appear on the right */
+}
+
+/* Add additional styling for the sections as needed */
+.left.side,
+.right.side {
+    box-sizing: border-box;
+}
+
+.sidemenu {
+    font-family: "Madimi One", sans-serif;
+    align-items: center;
+}
+
+.block{
+    background-color:#d9d9d9;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    box-shadow: 3px 0px 2px #555;
+    transition: 0s ease-in-out 3s;
+}
+
+.block1{
+    border-radius: 0px 15px 0px 0px;
+    box-shadow: 3px 0px 2px #555;
+
+}
+
+.selected {
+    width:22vh; /* Width of active block */
+    background-color: #78b1a8; /* Active block color */
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 5px #555;
+}
+
+.sidemenu .block .fas{
+    color: #78b1a8;
+    text-shadow: 1px 1px 5px black;
+    font-size: 2.5vh;
+    padding: 15px;
+}
+
+.sidemenu .selected .fas{
+    color: #d9d9d9;
 }
