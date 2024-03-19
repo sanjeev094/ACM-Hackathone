@@ -72,17 +72,87 @@
     <i class="fas fa-search"></i>
   </div>
 
-  <section class="main body">
+  <section class="main body mb-5">
 
     <section class="left side">
-      
-      <div class="sidemenu">
+
+      <div class="sidemenu mb-5">
         <div class="block block1"><i class="fas fa-stethoscope"></i></div>
         <div class="block"><i class="fas fa-hospital"></i></div>
         <div class="block"><i class="fas fa-capsules"></i></div>
         <div class="block"><i class="fas fa-notes-medical"></i></div>
         <div class="block selected"><i class="fas fa-history"></i> HISTORY</div> <!-- Active block -->
       </div>
+
+      <!-- ========== Start Calendar ========== -->
+      <div class="calendar" id="calendar-container"></div>
+
+      <script>
+        function generateCalendar(year, month) {
+          // Get the first day of the month
+          const firstDay = new Date(year, month - 1, 1);
+          // Get the last day of the month
+          const lastDay = new Date(year, month, 0);
+
+          const daysInMonth = lastDay.getDate();
+          const firstDayOfWeek = firstDay.getDay();
+
+          const calendarContainer = document.getElementById('calendar-container');
+          calendarContainer.innerHTML = '';
+
+          const monthYearHeader = document.createElement('div');
+          monthYearHeader.classList.add('monthyear');
+          monthYearHeader.textContent = firstDay.toLocaleString('default', { month: 'long' }) + ' ' + year;
+          calendarContainer.appendChild(monthYearHeader);
+
+          const daysContainer = document.createElement('div');
+          daysContainer.classList.add('days');
+          calendarContainer.appendChild(daysContainer);
+
+          // Add day names
+          const dayNames = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+          for (const dayName of dayNames) {
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('day');
+            dayElement.textContent = dayName;
+            daysContainer.appendChild(dayElement);
+          }
+
+          // Add empty cells before the first day of the month
+          for (let i = 0; i < firstDayOfWeek; i++) {
+            const emptyDay = document.createElement('div');
+            emptyDay.classList.add('day');
+            daysContainer.appendChild(emptyDay);
+          }
+
+          // Add days of the month
+          for (let day = 1; day <= daysInMonth; day++) {
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('day');
+            dayElement.textContent = day;
+            daysContainer.appendChild(dayElement);
+
+            // Highlight current day
+            const currentDate = new Date();
+            if (year === currentDate.getFullYear() && month === currentDate.getMonth() + 1 && day === currentDate.getDate()) {
+              const currentDayCircle = document.createElement('div');
+              currentDayCircle.classList.add('current-day');
+              dayElement.appendChild(currentDayCircle);
+            }
+          }
+        }
+
+        // Get current date
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const currentMonth = currentDate.getMonth() + 1;
+
+        // Generate calendar for the current month and year
+        generateCalendar(currentYear, currentMonth);
+      </script>
+
+
+      <!-- ========== End Calendar ========== -->
 
     </section>
 
@@ -208,6 +278,35 @@
 
   </section>
 
+  <div class="footermain">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/image/innomed trans.png" alt="InnoMed">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color: #78b1a8"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter fa-xl" style="color: #78b1a8"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-instagram fa-xl" style="color: #78b1a8"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #78b1a8"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 InnoMed. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
